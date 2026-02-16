@@ -3,95 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <title>Team Portfolio - Projects</title>
-
-    <!-- Bootstrap for responsiveness -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Our custom styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body class="container">
+    <!-- Shared site navigation; keep links consistent across all pages. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3 rounded">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Team Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="project.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light mt-3 rounded">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Team Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+    <section class="mt-5 text-center">
+        <!-- Page intro explains the purpose of this portfolio view. -->
+        <h1>Our Portfolio</h1>
+        <p class="lead">This is our first project, built as a team.</p>
+        <button class="btn btn-primary mt-3" onclick="toggleTheme()">
+            Toggle Dark Mode
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="project.html">Projects</a>
-                </li>
-            </ul>
+    </section>
+
+    <section class="row mt-5">
+        <!-- Team portfolio cards highlight each member's role and strengths. -->
+        <div class="col-md-4 mb-4">
+            <!-- Repeatable card pattern; keep structure aligned for easy edits. -->
+            <div class="card h-100 p-3">
+                <h3>Aiden Dossous</h3>
+                <p>Role: Layout and content cleanup, plus polishing the final presentation.</p>
+                <p><strong>Skills:</strong></p>
+                <ul>
+                    <li>HTML structure</li>
+                    <li>CSS styling</li>
+                    <li>Team coordination</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
 
-<!-- Page Header -->
-<section class="mt-5 text-center">
-    <h1>Our Projects</h1>
-    <p class="lead">
-        A showcase of the work we’ve built collaboratively.
-    </p>
-
-    <button class="btn btn-primary mt-3" onclick="toggleTheme()">
-        Toggle Dark Mode
-    </button>
-</section>
-
-<!-- Projects Grid -->
-<section class="row mt-5">
-
-    <div class="col-md-4 mb-4">
-        <div class="card h-100 p-3">
-            <h3>Andy's Projects</h3>
-            <p>
-                I do not have any GitHub projects.
-            </p>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 p-3">
+                <h3>Andy Lee</h3>
+                <p>Role: Set up the project structure, built the projects page, and reviewed merges.</p>
+                <p><strong>Skills:</strong></p>
+                <ul>
+                    <li>Bootstrap layout</li>
+                    <li>GitHub workflows</li>
+                    <li>Merge conflict resolution</li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <div class="col-md-4 mb-4">
-        <div class="card h-100 p-3">
-            <h3>Project Two</h3>
-            <p>
-                Brief description of another project. You can link to GitHub or a demo.
-            </p>
-            <a href="#" class="btn btn-outline-primary mt-auto">View Project</a>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 p-3">
+                <h3>Jason Lee</h3>
+                <p>Role: Helped with page content, navigation updates, and browser testing.</p>
+                <p><strong>Skills:</strong></p>
+                <ul>
+                    <li>JavaScript basics</li>
+                    <li>Debugging</li>
+                    <li>Documentation</li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="col-md-4 mb-4">
-        <div class="card h-100 p-3">
-            <h3>Project Three</h3>
-            <p>
-                Another example project. You can expand this later in the semester.
-            </p>
-            <a href="#" class="btn btn-outline-primary mt-auto">View Project</a>
-        </div>
-    </div>
+    <footer class="mt-5 mb-3 text-center">
+        <p>© 2026 CISC Homework 1 | Built with HTML, CSS, JavaScript & GitHub</p>
+    </footer>
 
-</section>
-
-<!-- Footer -->
-<footer class="mt-5 mb-3 text-center">
-    <p>© 2026 CISC Homework 1 | Built with HTML, CSS, JavaScript & GitHub</p>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Our JavaScript -->
-<script src="script.js"></script>
-
+    <!-- Bootstrap bundle enables mobile navbar collapse/toggle behavior. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom interactions (theme toggle) live in script.js. -->
+    <script src="script.js"></script>
 </body>
 </html>
