@@ -23,7 +23,7 @@ This repository will continue to be developed and expanded throughout the semest
 ---
 
 ## Public GitHub Pages URL
-https://github.com/leejason-png/cisc-homework-1
+https://leejason-png.github.io/cisc-homework-1/
 
 ---
 
