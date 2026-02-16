@@ -1,189 +1,98 @@
 <!DOCTYPE html>
-<!-- Document type declaration -->
 <html lang="en">
-<!-- Root html element -->
 <head>
-    <!-- Head section -->
     <meta charset="UTF-8">
-    <!-- Character encoding -->
     <title>About Our Team</title>
-    <!-- Page title -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Custom stylesheet -->
 </head>
-<!-- End of head -->
 <body class="container">
-    <!-- Body content -->
+    <!-- Shared site navigation; keep links consistent across all pages. -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3 rounded">
-        <!-- Navigation bar -->
         <div class="container-fluid">
-            <!-- Navbar container -->
             <a class="navbar-brand" href="index.html">Team Portfolio</a>
-            <!-- Brand link -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <!-- Navbar toggle button -->
                 <span class="navbar-toggler-icon"></span>
-                <!-- Toggle icon -->
             </button>
-            <!-- End of toggle button -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Collapsible nav container -->
                 <ul class="navbar-nav ms-auto">
-                    <!-- Nav list -->
                     <li class="nav-item">
-                        <!-- Nav item -->
                         <a class="nav-link" href="index.html">Home</a>
-                        <!-- Home link -->
                     </li>
-                    <!-- End nav item -->
                     <li class="nav-item">
-                        <!-- Nav item -->
                         <a class="nav-link active" href="about.html">About</a>
-                        <!-- About link -->
                     </li>
-                    <!-- End nav item -->
                     <li class="nav-item">
-                        <!-- Nav item -->
                         <a class="nav-link" href="project.html">Projects</a>
-                        <!-- Projects link -->
                     </li>
-                    <!-- End nav item -->
                 </ul>
-                <!-- End nav list -->
             </div>
-            <!-- End collapsible nav container -->
         </div>
-        <!-- End navbar container -->
     </nav>
-    <!-- End navigation bar -->
 
     <h1 class="mt-4">About Our Team</h1>
-    <!-- Page heading -->
     <p>Aiden Dossous, Andy Lee, and Jason Lee are aspiring developers who created this portfolio website.</p>
-    <!-- Intro paragraph -->
 
     <button class="btn btn-primary mb-4" onclick="toggleTheme()">
-        <!-- Theme toggle button -->
         Toggle Dark Mode
     </button>
-    <!-- End theme toggle button -->
 
     <div class="row">
-        <!-- Team members row -->
+        <!-- Team bios summarize each member's contribution and skills. -->
         <div class="col-md-4 mb-4">
-            <!-- Team member column -->
             <div class="card p-3 h-100">
-                <!-- Team member card -->
                 <h3>Aiden Dossous</h3>
-                <!-- Member name -->
                 <p>Focused on layout, content cleanup, and polishing the overall presentation.</p>
-                <!-- Member contribution -->
-                <p>
-                    <!-- Skills paragraph -->
-                    <strong>Skills:</strong>
-                    <!-- Skills label -->
-                    HTML structure, CSS styling, team coordination.
-                    <!-- Skills text -->
-                </p>
-                <!-- End skills paragraph -->
+                <p><strong>Skills:</strong> HTML structure, CSS styling, team coordination.</p>
             </div>
-            <!-- End team member card -->
         </div>
-        <!-- End team member column -->
 
         <div class="col-md-4 mb-4">
-            <!-- Team member column -->
             <div class="card p-3 h-100">
-                <!-- Team member card -->
                 <h3>Andy Lee</h3>
-                <!-- Member name -->
                 <p>Set up the essential files and structure, created the projects page, and reviewed pull requests.</p>
-                <!-- Member contribution -->
-                <p>
-                    <!-- Skills paragraph -->
-                    <strong>Skills:</strong>
-                    <!-- Skills label -->
-                    GitHub workflows, Bootstrap layout, merge conflict resolution.
-                    <!-- Skills text -->
-                </p>
-                <!-- End skills paragraph -->
+                <p><strong>Skills:</strong> GitHub workflows, Bootstrap layout, merge conflict resolution.</p>
             </div>
-            <!-- End team member card -->
         </div>
-        <!-- End team member column -->
 
         <div class="col-md-4 mb-4">
-            <!-- Team member column -->
             <div class="card p-3 h-100">
-                <!-- Team member card -->
                 <h3>Jason Lee</h3>
-                <!-- Member name -->
                 <p>Contributed to page content, navigation updates, and testing the site in the browser.</p>
-                <!-- Member contribution -->
-                <p>
-                    <!-- Skills paragraph -->
-                    <strong>Skills:</strong>
-                    <!-- Skills label -->
-                    JavaScript basics, debugging, documentation.
-                    <!-- Skills text -->
-                </p>
-                <!-- End skills paragraph -->
+                <p><strong>Skills:</strong> JavaScript basics, debugging, documentation.</p>
             </div>
-            <!-- End team member card -->
         </div>
-        <!-- End team member column -->
     </div>
-    <!-- End team members row -->
 
     <section class="mt-5">
-        <!-- Contact section -->
         <h2>Contact</h2>
-        <!-- Contact heading -->
+        <!-- Public contact list for quick coordination among team members. -->
         <ul>
-            <!-- Contact list -->
             <li>Aiden: 302 332 3560</li>
-            <!-- Contact item -->
             <li>Jason: 302 490 3855</li>
-            <!-- Contact item -->
             <li>Andy: 302 688 6908</li>
-            <!-- Contact item -->
         </ul>
-        <!-- End contact list -->
     </section>
-    <!-- End contact section -->
 
     <section class="mt-5">
-        <!-- Project purpose section -->
+        <!-- Assignment context and technology stack for graders/reviewers. -->
         <h2>Project Purpose</h2>
-        <!-- Section heading -->
         <p>
-            <!-- Purpose paragraph -->
             This project was created as part of a CISC assignment to practice collaborative web development,
             GitHub workflows, branching, pull requests, and resolving merge conflicts.
         </p>
-        <!-- End purpose paragraph -->
         <p>
-            <!-- Tech paragraph -->
             Technologies used include HTML, CSS, JavaScript, Bootstrap, and GitHub Pages for deployment.
         </p>
-        <!-- End tech paragraph -->
     </section>
-    <!-- End project purpose section -->
 
     <footer class="mt-5 mb-3 text-center">
-        <!-- Footer -->
         <p>© 2026 CISC Homework 1 | Built with HTML, CSS, JavaScript & GitHub</p>
-        <!-- Footer text -->
     </footer>
-    <!-- End footer -->
 
+    <!-- Bootstrap bundle enables mobile navbar collapse/toggle behavior. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Bootstrap script -->
+    <!-- Custom interactions (theme toggle) live in script.js. -->
     <script src="script.js"></script>
-    <!-- Custom script -->
 </body>
-
 </html>
-
